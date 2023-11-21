@@ -1,48 +1,81 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-
 import Button from "@mui/material/Button";
-
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import { useNavigate } from "react-router";
-
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 
-import { navTabs } from "./StyledNavbar";
+import Tooltip from "@mui/material/Tooltip";
+import { language } from "./StyledNavbar";
 
 function Navbar() {
   const navigate = useNavigate();
-
+  const [t, i18n] = useTranslation("translation");
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [page, setPage] = useState("");
+  const [lang, setLang] = useState("");
   const [state, setState] = useState({
     left: false,
   });
 
+  const navTabs = [
+    {
+      text: `${t("navTabs.bar1")}`,
+    },
+    {
+      text: `${t("navTabs.bar2")}`,
+    },
+    {
+      text: `${t("navTabs.bar3")}`,
+    },
+  ];
+
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget);
+  };
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
+
   useEffect(() => {
     const routeToHomePage = () => {
       switch (page) {
+        case "home":
+          navigate("/");
+          setPage("");
+          break;
+
         case "Om Oss":
+        case "About Us":
+        case "معلومات عنا":
           navigate("/about");
           setPage("");
           break;
 
         case "Kontakta Oss":
+        case "Contact Us":
+        case "اتصل بنا":
           navigate("/contact");
           setPage("");
           break;
 
-        case "Nyheter":
-          navigate("/news");
+        case "Våra Tjänster":
+        case "Our Services":
+        case "خدماتنا":
+          navigate("/services");
           setPage("");
           break;
 
@@ -51,6 +84,28 @@ function Navbar() {
     };
     routeToHomePage();
   }, [navigate, page]);
+
+  useEffect(() => {
+    const changeLanguage = () => {
+      switch (lang) {
+        case "se":
+          setLang(i18n.changeLanguage("se"));
+
+          break;
+
+        case "en":
+          setLang(i18n.changeLanguage("en"));
+          break;
+
+        case "ar":
+          setLang(i18n.changeLanguage("ar"));
+          break;
+
+        default:
+      }
+    };
+    changeLanguage();
+  }, [i18n, lang]);
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -90,7 +145,7 @@ function Navbar() {
               <ListItemButton>
                 <Button
                   sx={{
-                    mt: 1,
+                    mt: 2,
                     p: 0,
                   }}
                 >
@@ -98,7 +153,7 @@ function Navbar() {
                     style={{
                       color: "#45657e",
                       fontWeight: 600,
-                      fontSize: "16px",
+                      fontSize: "15px",
                     }}
                   >
                     {tab.text}
@@ -115,7 +170,7 @@ function Navbar() {
       </List>
     </Box>
   );
-
+  console.log(lang);
   return (
     <AppBar
       position="static"
@@ -132,14 +187,23 @@ function Navbar() {
             variant="h6"
             noWrap
             component="a"
-            href="/"
             sx={{
-              mr: 20,
+              mr: 90,
               display: { xs: "none", md: "flex" },
-              padding: "10px",
-              color: "inherit",
             }}
-          ></Typography>
+          >
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                fontWeight: 600,
+                color: "#45657E",
+                fontSize: "1.4rem",
+              }}
+            >
+              Balsam care AB
+            </Link>
+          </Typography>
           <Box
             sx={{
               bgcolor: "transparent",
@@ -175,15 +239,22 @@ function Navbar() {
             variant="h5"
             noWrap
             component="a"
-            href="/"
             sx={{
-              padding: "5px",
               display: { xs: "flex", md: "none" },
               flexGrow: 1.5,
-              color: "inherit",
-              textDecoration: "none",
             }}
-          ></Typography>
+          >
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                fontWeight: 600,
+                color: "#45657E",
+              }}
+            >
+              Balsam care AB
+            </Link>
+          </Typography>
           <Box
             sx={{
               flexGrow: 1,
@@ -199,13 +270,64 @@ function Navbar() {
                   color: "#45657e",
                   margin: "20px",
                   fontWeight: 600,
-                  fontSize: "20px",
+                  fontSize: "1rem",
                 }}
               >
                 {tab2.text}
               </Button>
             ))}
           </Box>
+          <div>
+            <>
+              <Box sx={{ flexGrow: 0 }}>
+                <Tooltip title="Open settings">
+                  <Button
+                    sx={{
+                      backgroundColor: "#45657E",
+                      color: "white",
+                      border: " 1px solid #45657E",
+                      fontWeight: 600,
+                      ":hover": {
+                        bgcolor: "white", // theme.palette.primary.main
+                        color: "#45657E",
+                      },
+                    }}
+                    onClick={handleOpenUserMenu}
+                  >
+                    {t("current.language")}
+                  </Button>
+                </Tooltip>
+                <Menu
+                  id="menu-appbar"
+                  anchorEl={anchorElUser}
+                  anchorOrigin={{
+                    vertical: "top",
+                    horizontal: "right",
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: "top",
+                    horizontal: "right",
+                  }}
+                  open={Boolean(anchorElUser)}
+                  onClose={handleCloseUserMenu}
+                >
+                  {" "}
+                  {language.map((lang) => (
+                    <MenuItem key={lang.text} onClick={handleCloseUserMenu}>
+                      <Typography
+                        textAlign="center"
+                        onClick={() => setLang(lang.text)}
+                        width="2rem"
+                      >
+                        {lang.text}
+                      </Typography>
+                    </MenuItem>
+                  ))}
+                </Menu>
+              </Box>
+            </>
+          </div>
         </Toolbar>
       </Container>
     </AppBar>

@@ -1,0 +1,35 @@
+{
+  "current": {
+    "language": "se"
+  },
+
+  "home": {
+    "titel": "För en tryggare och mer personlig assistans",
+    "text": "För oss på Balsam care AB innebär engagerat helhetsansvar att vi är där för både dig och dina personliga assistenter. Vi lyssnar uppmärksamt för att förstå exakt vad du behöver. Vårt mål är att skapa en assistans som är skräddarsydd efter dina unika behov och vi strävar alltid efter individuella lösningar. Vi arbetar  kontinuerligt med våra assistenter för att säkerställa att du har ett välkoordinerat team",
+    "text2": "För oss är det en självklarhet att ta fullt ansvar för allt som rör personal och bemanning. Därför har vi en jourtelefon och tillsätter vikarier dygnet runt, året om. Det ska aldrig vara ditt eller dina anhörigas ansvar att söka och rekrytera personal – det är helt enkelt inte rätt"
+  },
+  "aboutPage": {
+    "titel": "Om Balsam care AB",
+    "text": "Vi förstår vikten av att skapa en trygg och stöttande miljö för våra kunder. Vi är stolta över att erbjuda personlig assistans av högsta kvalitet och strävar efter att göra varje dag enklare och mer meningsfull för dig",
+    "text2": "Som personlig assistent på Balsam Care AB är vårt främsta mål att möta dina individuella behov och önskemål. Vi tror på att bygga starka och förtroendefulla relationer mellan våra kunder och assistenter. Varje medlem i vårt team är noggrant utvald och engagerad i att skapa en positiv och stödjande atmosfär. Vänliga hälsningar, Teamet på Balsam Care AB"
+  },
+  "contactPage": {
+    "titel": "Välkomna att kontakta oss",
+    "text": "Vi är glada att du har hittat till vår hemsida. Hos oss står du som besökare och potentiell kund i fokus. Om du har några frågor, behöver hjälp eller bara vill ha mer information om våra personliga assistanstjänster, är du varmt välkommen att kontakta oss. Vi finns här för att underlätta din vardag och erbjuda skräddarsydd personlig assistans utifrån dina behov. Vi strävar efter att skapa en trygg och tillgänglig plats för dig och dina nära. Tveka inte att höra av dig – vi är redo att lyssna och hjälpa till på bästa möjliga sätt. Tack för att du valde Balsam care AB. Vi ser fram emot att få lära känna dig och vara en del av din resa mot ökad självständighet och livskvalitet."
+  },
+  "servicePage": {
+    "titel": "Våra Tjänster",
+    "text": "Daglig personlig vård: Våra assistenter är utbildade för att tillhandahålla personlig vård och hjälp i vardagen. Oavsett om det handlar om hygienrutiner, påklädning eller andra dagliga uppgifter, är vi här för att stödja dig.",
+    "text2": "Hemtjänster: Vi erbjuder praktisk hjälp med hushållssysslor, inklusive städning, tvätt och inköp. Vårt mål är att skapa en bekväm och trivsam miljö hemma hos dig.",
+    "text3": "Medicinsk assistans: Våra kvalificerade assistenter kan ge stöd med medicinska behov, inklusive läkemedelshantering och uppföljning av hälsotillstånd. Vi samarbetar också nära med hälso- och sjukvårdsprofessionella för att säkerställa en holistisk vårdplan.",
+    "text4": "Aktiviteter och socialt stöd: Vi strävar efter att inte bara vara ditt stöd i vardagen utan också din följeslagare. Våra assistenter kan delta i olika aktiviteter, ge sällskap och stödja din sociala integration.",
+    "text5": "Flexibel schemaläggning: Vi förstår att varje individ har unika behov och förutsättningar. Därför erbjuder vi flexibel schemaläggning för att anpassa våra tjänster efter ditt livsstil och din dagliga rutin.",
+    "text6": "Kontinuitet och pålitlighet: Balsam Care AB är dedikerade till att skapa starka och långsiktiga relationer med våra kunder. Vi strävar efter att tillhandahålla kontinuitet i assistanslaget för att skapa en trygg och pålitlig miljö.",
+    "text7": "Oavsett vilken typ av stöd du söker, är vårt mål på Balsam Care AB att skapa en personlig assistansupplevelse som är anpassad efter just dina behov och önskemål. Vi är här för att göra livet enklare och mer meningsfullt för dig varje dag. Vänliga hälsningar, Teamet på Balsam Care AB"
+  },
+  "navTabs": {
+    "bar1": "Om Oss",
+    "bar2": "Kontakta Oss",
+    "bar3": "Våra Tjänster"
+  }
+}

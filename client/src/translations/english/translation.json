@@ -1,0 +1,38 @@
+{
+  "current": {
+    "language": "en"
+  },
+
+  "home": {
+    "titel": "For safer and more personal assistance",
+    "text": "For us at Balsam care AB, committed overall responsibility means that we are there for both you and your personal assistants. We listen carefully to understand exactly what you need. Our goal is to create assistance that is tailored to your unique needs and we always strive for individual solutions. We work continuously with our assistants to ensure you have a well-coordinated team",
+    "text2": "For us, it is a matter of course to take full responsibility for everything related to personnel and staffing. That's why we have an emergency telephone number and hire substitutes around the clock, all year round. It should never be your responsibility or that of your relatives to search and recruit staff - it is simply not right"
+  },
+
+  "aboutPage": {
+    "titel": "About Balsam care AB",
+    "text": "We understand the importance of creating a safe and supportive environment for our customers. We pride ourselves on offering the highest quality personal assistance and strive to make every day easier and more meaningful for you",
+    "text2": "As a personal assistant at Balsam Care AB, our main goal is to meet your individual needs and wishes. We believe in building strong and trusting relationships between our customers and assistants. Each member of our team is carefully selected and committed to creating a positive and supportive atmosphere. Kind regards, The team at Balsam Care AB"
+  },
+
+  "contactPage": {
+    "titel": "Welcome to contact us",
+    "text": "We are glad that you have found our website. With us, you as a visitor and potential customer are in focus. If you have any questions, need help or just want more information about our personal assistance services, you are most welcome to contact us . We are here to facilitate your everyday life and offer tailored personal assistance based on your needs. We strive to create a safe and accessible place for you and your loved ones. Do not hesitate to get in touch - we are ready to listen and help at the best possible way. Thank you for choosing Balsam care AB. We look forward to getting to know you and being part of your journey towards greater independence and quality of life."
+  },
+
+  "servicePage": {
+    "titel": "Our Services",
+    "text": "Daily personal care: Our assistants are trained to provide personal care and assistance in everyday life. Whether it's hygiene routines, dressing or other daily tasks, we're here to support you.",
+    "text2": "Domestic services: We offer practical help with household chores, including cleaning, laundry and shopping. Our goal is to create a comfortable and pleasant environment at your home.",
+    "text3": "Medical assistance: Our qualified assistants can provide support with medical needs, including medication management and follow-up of health conditions. We also work closely with healthcare professionals to ensure a holistic care plan.",
+    "text4": "Activities and social support: We strive to not only be your support in everyday life but also your companion. Our assistants can participate in various activities, provide company and support your social integration.",
+    "text5": "Flexible scheduling: We understand that each individual has unique needs and circumstances. That's why we offer flexible scheduling to adapt our services to your lifestyle and daily routine.",
+    "text6": "Continuity and reliability: Balsam Care AB is dedicated to creating strong and long-term relationships with our customers. We strive to provide continuity of assistance funding to create a safe and reliable environment.",
+    "text7": "Regardless of the type of support you are looking for, our goal at Balsam Care AB is to create a personal assistance experience that is tailored to your needs and wishes. We are here to make life easier and more meaningful for you every day. Kind regards, The team at Balsam Care AB"
+  },
+  "navTabs": {
+    "bar1": "About Us",
+    "bar2": "Contact Us",
+    "bar3": "Our Services"
+  }
+}
